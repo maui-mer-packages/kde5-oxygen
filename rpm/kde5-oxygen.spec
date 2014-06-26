@@ -61,15 +61,13 @@ The %{name}-devel package contains the files necessary to develop applications
 that use %{name}.
 
 
-%package icon-theme
-Summary:    Oxygen icon theme
+%package cursor-themes
+Summary:    Oxygen cursor themes
 Group:      System/Base
 BuildArch:  noarch
 
-%description icon-theme
-Oxygen is the standard icon theme for KDE, but follows the freedesktop.org
-icon schemes, so it can be used in other desktop environments using this
-specification.
+%description cursor-themes
+A full set of cursor themes.
 
 
 %package sounds
@@ -140,11 +138,11 @@ rm -rf %{buildroot}
 # >> files devel
 # << files devel
 
-%files icon-theme
+%files cursor-themes
 %defattr(-,root,root,-)
 %{_datadir}/icons/*
-# >> files icon-theme
-# << files icon-theme
+# >> files cursor-themes
+# << files cursor-themes
 
 %files sounds
 %defattr(-,root,root,-)

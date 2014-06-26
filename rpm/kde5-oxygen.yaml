@@ -71,15 +71,13 @@ SubPackages:
         that use %{name}.
       Files:
           - "%{_kde5_libdir}/*.so"
-    - Name: icon-theme
+    - Name: cursor-themes
       Group: System/Base
       BuildArch: noarch
       AutoDepend: False
-      Summary: Oxygen icon theme
+      Summary: Oxygen cursor themes
       Description: |
-        Oxygen is the standard icon theme for KDE, but follows the freedesktop.org
-        icon schemes, so it can be used in other desktop environments using this
-        specification.
+        A full set of cursor themes.
       Files:
           - "%{_datadir}/icons/*"
     - Name: sounds
