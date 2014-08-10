@@ -9,7 +9,7 @@ Name:       kde5-oxygen
 # << macros
 
 Summary:    KDE's default style and look
-Version:    4.98.0
+Version:    5.0.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
@@ -160,8 +160,8 @@ rm -rf %{buildroot}
 
 %files style
 %defattr(-,root,root,-)
-%{_kde5_plugindir}/kstyle_oxygen_config.so
-%{_kde5_plugindir}/styles/oxygen.so
+%{_qt5_plugindir}/kstyle_oxygen_config.so
+%{_qt5_plugindir}/styles/oxygen.so
 %{_kde5_datadir}/kstyle/themes/oxygen.themerc
 # >> files style
 # << files style
