@@ -1,4 +1,4 @@
-Name         : kde5-oxygen
+Name         : oxygen
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -22,19 +22,18 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
-    - kf5-umbrella
-    - kf5-ki18n-devel
-    - kf5-kconfig-devel
-    - kf5-kconfigwidgets-devel
-    - kf5-kguiaddons-devel
-    - kf5-kwidgetsaddons-devel
-    - kf5-kservice-devel
-    - kf5-kcompletion-devel
-    - kf5-frameworkintegration-devel
-    - kf5-kwindowsystem-devel
-    - kde5-kwin-devel
+    - ki18n-devel
+    - kconfig-devel
+    - kconfigwidgets-devel
+    - kguiaddons-devel
+    - kwidgetsaddons-devel
+    - kservice-devel
+    - kcompletion-devel
+    - frameworkintegration-devel
+    - kwindowsystem-devel
+    - kwin-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -51,7 +50,7 @@ PkgConfigBR:
     - Qt5X11Extras
     - xcb
 Requires:
-    - kde5-filesystem
+    - kf5-filesystem
 RequiresPost:
     - /sbin/ldconfig
 RequiresPostUn:
@@ -59,9 +58,9 @@ RequiresPostUn:
 
 Files:
     - "%doc COPYING"
-    - "%{_kde5_bindir}/oxygen-demo5"
-    - "%{_kde5_bindir}/oxygen-settings5"
-    - "%{_kde5_libdir}/*.so.*"
+    - "%{_kf5_bindir}/oxygen-demo5"
+    - "%{_kf5_bindir}/oxygen-settings5"
+    - "%{_kf5_libdir}/*.so.*"
 
 SubPackages:
     - Name: devel
@@ -71,7 +70,7 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
-          - "%{_kde5_libdir}/*.so"
+          - "%{_kf5_libdir}/*.so"
     - Name: cursor-themes
       Group: System/Base
       BuildArch: noarch
@@ -80,7 +79,7 @@ SubPackages:
       Description: |
         A full set of cursor themes.
       Files:
-          - "%{_datadir}/icons/*"
+          - "%{_kf5_sharedir}/icons/*"
     - Name: sounds
       Group: System/Base
       BuildArch: noarch
@@ -89,7 +88,7 @@ SubPackages:
       Description: |
         A full set of sounds for different desktop events.
       Files:
-          - "%{_datadir}/sounds/*"
+          - "%{_kf5_sharedir}/sounds/*"
     - Name: kwin
       Group: System/Base
       Summary: KWin "Oxygen" decoration
@@ -98,14 +97,14 @@ SubPackages:
       Requires:
           - kde5-kwin
       Files:
-          - "%{_kde5_plugindir}/kwin/kdecorations/config/kwin_oxygen_config.so"
-          - "%{_kde5_plugindir}/kwin/kdecorations/kwin3_oxygen.so"
+          - "%{_kf5_plugindir}/kwin/kdecorations/config/kwin_oxygen_config.so"
+          - "%{_kf5_plugindir}/kwin/kdecorations/kwin3_oxygen.so"
     - Name: style
       Group: System/Base
       Summary: QtWidgets "Oxygen" style
       Description: |
         This package contains the "Oxygen" style for QtWidgets.
       Files:
-          - "%{_qt5_plugindir}/kstyle_oxygen_config.so"
-          - "%{_qt5_plugindir}/styles/oxygen.so"
-          - "%{_kde5_datadir}/kstyle/themes/oxygen.themerc"
+          - "%{_kf5_plugindir}/kstyle_oxygen_config.so"
+          - "%{_kf5_plugindir}/styles/oxygen.so"
+          - "%{_kf5_sharedir}/kstyle/themes/oxygen.themerc"
