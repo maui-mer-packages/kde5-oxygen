@@ -95,7 +95,7 @@ SubPackages:
       Description: |
         This package contains the "Oxygen" decoration for KWin.
       Requires:
-          - kde5-kwin
+          - kwin
       Files:
           - "%{_kf5_plugindir}/kwin/kdecorations/config/kwin_oxygen_config.so"
           - "%{_kf5_plugindir}/kwin/kdecorations/kwin3_oxygen.so"

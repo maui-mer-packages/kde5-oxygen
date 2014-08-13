@@ -83,7 +83,7 @@ A full set of sounds for different desktop events.
 Summary:    KWin "Oxygen" decoration
 Group:      System/Base
 Requires:   %{name} = %{version}-%{release}
-Requires:   kde5-kwin
+Requires:   kwin
 
 %description kwin
 This package contains the "Oxygen" decoration for KWin.
