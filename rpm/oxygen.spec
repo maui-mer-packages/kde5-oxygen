@@ -45,6 +45,7 @@ BuildRequires:  kservice-devel
 BuildRequires:  kcompletion-devel
 BuildRequires:  frameworkintegration-devel
 BuildRequires:  kwindowsystem-devel
+BuildRequires:  kiconthemes-devel
 BuildRequires:  kwin-devel
 
 %description

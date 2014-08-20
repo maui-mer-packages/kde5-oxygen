@@ -33,6 +33,7 @@ PkgBR:
     - kcompletion-devel
     - frameworkintegration-devel
     - kwindowsystem-devel
+    - kiconthemes-devel
     - kwin-devel
 PkgConfigBR:
     - Qt5Core
