@@ -109,3 +109,12 @@ SubPackages:
           - "%{_kf5_plugindir}/kstyle_oxygen_config.so"
           - "%{_kf5_plugindir}/styles/oxygen.so"
           - "%{_kf5_sharedir}/kstyle/themes/oxygen.themerc"
+    - Name: lookandfeel
+      Group: System/Base
+      BuildArch: noarch
+      Summary: Oxygen look and feel for Plasma
+      Description: |
+        This package contains the "Oxygen" look and feel for Plasma.
+      Files:
+          - "%dir %{_kf5_sharedir}/plasma/look-and-feel/org.kde.oxygen"
+          - "%{_kf5_sharedir}/plasma/look-and-feel/org.kde.oxygen/*"

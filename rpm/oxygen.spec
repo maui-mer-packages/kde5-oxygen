@@ -99,6 +99,16 @@ Requires:   %{name} = %{version}-%{release}
 This package contains the "Oxygen" style for QtWidgets.
 
 
+%package lookandfeel
+Summary:    Oxygen look and feel for Plasma
+Group:      System/Base
+BuildArch:  noarch
+Requires:   %{name} = %{version}-%{release}
+
+%description lookandfeel
+This package contains the "Oxygen" look and feel for Plasma.
+
+
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
@@ -165,3 +175,10 @@ rm -rf %{buildroot}
 %{_kf5_sharedir}/kstyle/themes/oxygen.themerc
 # >> files style
 # << files style
+
+%files lookandfeel
+%defattr(-,root,root,-)
+%dir %{_kf5_sharedir}/plasma/look-and-feel/org.kde.oxygen
+%{_kf5_sharedir}/plasma/look-and-feel/org.kde.oxygen/*
+# >> files lookandfeel
+# << files lookandfeel
