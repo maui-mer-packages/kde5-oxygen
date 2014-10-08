@@ -9,7 +9,7 @@ Name:       oxygen
 # << macros
 
 Summary:    KDE's default style and look
-Version:    5.0.0
+Version:    5.0.95
 Release:    1
 Group:      System/Base
 License:    GPLv2+
