@@ -110,7 +110,7 @@ This package contains the "Oxygen" look and feel for Plasma.
 
 
 %prep
-%setup -q -n %{name}-%{version}/upstream
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup

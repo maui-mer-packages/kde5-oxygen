@@ -7,7 +7,6 @@ Summary      : KDE's default style and look
 Description  : |
   KDE's default style and look.
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
